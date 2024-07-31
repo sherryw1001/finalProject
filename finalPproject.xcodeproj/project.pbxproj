@@ -11,6 +11,9 @@
 		039CD4FC2C5410550004C39F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039CD4FB2C5410550004C39F /* ContentView.swift */; };
 		039CD4FE2C5410560004C39F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039CD4FD2C5410560004C39F /* Assets.xcassets */; };
 		039CD5012C5410560004C39F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039CD5002C5410560004C39F /* Preview Assets.xcassets */; };
+		8B645A7D2C5A89C100B219FF /* Letters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B645A7C2C5A89C100B219FF /* Letters.swift */; };
+		8B645A7F2C5A89CC00B219FF /* Basic Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B645A7E2C5A89CC00B219FF /* Basic Words.swift */; };
+		8B645A812C5A89DB00B219FF /* Deaf Culture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B645A802C5A89DB00B219FF /* Deaf Culture.swift */; };
 		8B7ECEB82C593EBB00A3443F /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7ECEB72C593EBB00A3443F /* HomePage.swift */; };
 /* End PBXBuildFile section */
 
@@ -20,6 +23,9 @@
 		039CD4FB2C5410550004C39F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		039CD4FD2C5410560004C39F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		039CD5002C5410560004C39F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8B645A7C2C5A89C100B219FF /* Letters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Letters.swift; sourceTree = "<group>"; };
+		8B645A7E2C5A89CC00B219FF /* Basic Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Basic Words.swift"; sourceTree = "<group>"; };
+		8B645A802C5A89DB00B219FF /* Deaf Culture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Deaf Culture.swift"; sourceTree = "<group>"; };
 		8B7ECEB72C593EBB00A3443F /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -38,6 +44,9 @@
 			isa = PBXGroup;
 			children = (
 				8B7ECEB72C593EBB00A3443F /* HomePage.swift */,
+				8B645A7C2C5A89C100B219FF /* Letters.swift */,
+				8B645A7E2C5A89CC00B219FF /* Basic Words.swift */,
+				8B645A802C5A89DB00B219FF /* Deaf Culture.swift */,
 				039CD4F82C5410550004C39F /* finalPproject */,
 				039CD4F72C5410550004C39F /* Products */,
 			);
@@ -143,6 +152,9 @@
 				039CD4FC2C5410550004C39F /* ContentView.swift in Sources */,
 				8B7ECEB82C593EBB00A3443F /* HomePage.swift in Sources */,
 				039CD4FA2C5410550004C39F /* finalPprojectApp.swift in Sources */,
+				8B645A7D2C5A89C100B219FF /* Letters.swift in Sources */,
+				8B645A7F2C5A89CC00B219FF /* Basic Words.swift in Sources */,
+				8B645A812C5A89DB00B219FF /* Deaf Culture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
