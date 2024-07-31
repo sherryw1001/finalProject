@@ -9,7 +9,49 @@ import SwiftUI
 
 struct Basic_Words: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Color(red: 248/255, green: 247/255, blue: 1)
+                .ignoresSafeArea()
+                .toolbar{
+                    HStack{
+                        HStack{
+                            Image("Logo")
+                                .resizable()
+                                .aspectRatio (contentMode:.fit)
+                                .cornerRadius(15)
+                            Text("ASL")
+                                .foregroundColor(Color(red: 0.35, green: 0.163, blue: 0.574))
+                            
+                        }
+                        HStack{
+                            Image("Streak")
+                                .resizable()
+                                .aspectRatio (contentMode:.fit)
+                                .cornerRadius(15)
+                            Text("84")
+                            HStack{
+                                Image("Gems")
+                                    .resizable()
+                                    .aspectRatio (contentMode:.fit)
+                                    .cornerRadius(15)
+                                Text("250")
+                                    .foregroundColor(Color(red: 0.021, green: 0.673, blue: 0.912))
+                                
+                            }
+                            HStack{
+                                Image("Heart")
+                                    .resizable()
+                                    .aspectRatio (contentMode:.fit)
+                                    .cornerRadius(15)
+                                Text("5")
+                                    .foregroundColor(Color(red: 0.927, green: 0.104, blue: 0.151))
+                                
+                            }
+                            
+                        }
+                    }
+                }
+        }
     }
 }
 
