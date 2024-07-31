@@ -15,7 +15,7 @@ struct HomePage: View {
                     .ignoresSafeArea()
                 VStack{
                     NavigationLink(destination: Letters()) {
-                        VStack(alignment: .center, spacing: 200){
+                        VStack{
                             Text("Letters")
                                 .font(.title)
                                 .fontWeight(.semibold)
@@ -34,7 +34,7 @@ struct HomePage: View {
                             
                         }
                     NavigationLink(destination: Basic_Words()) {
-                        VStack(alignment: .center, spacing: 200){
+                        VStack{
                             Text("Basic Words")
                                 .font(.title)
                                 .fontWeight(.semibold)
@@ -54,8 +54,8 @@ struct HomePage: View {
                             }
                         }
                         
-                    NavigationLink(destination: Deaf_Culture()) {
-                        VStack(alignment: .center, spacing: 200){
+                    NavigationLink(destination:Deaf_Culture()) {
+                        VStack{
                             Text("Deaf Culture")
                                 .font(.title)
                                 .fontWeight(.semibold)
