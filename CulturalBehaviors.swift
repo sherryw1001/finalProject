@@ -60,15 +60,25 @@ struct CulturalBehaviors: View {
                         .fontWeight(.semibold)
                         .foregroundColor(Color(red: 147/255, green: 129/255, blue: 255/255))
                         .multilineTextAlignment(.center)
+                        .padding(10)
+                    
+                    Image("CulturalPicture")
+                        .resizable()
+                        .aspectRatio (contentMode:.fit)
+                        .cornerRadius(15)
+                        .padding(10)
+                    
+                    
                     Text("Deaf culture brings people together in a close-knit community where they celebrate their identities. Visual communication is key, with eye contact, facial expressions, and body language playing crucial roles. Common ways to get someone's attention include tapping them on the shoulder or waving in their peripheral vision. \n")
                         .font(.headline)
                         .foregroundColor(Color(red: 147/255, green: 129/255, blue: 255/255))
                         .multilineTextAlignment(.center)
-                        .padding(15)
+                        .padding(10)
                     
                     
                     Link(destination: URL (string: "https://vawnet.org/sc/etiquette")!) {
-                        Text("Click me!")
+                        Text("Click to learn more")
+
                     }
                     
                     .font(.title3)
@@ -80,6 +90,7 @@ struct CulturalBehaviors: View {
                     .cornerRadius(10)
                     
                 }
+                .padding(15)
             }
         }
     }

@@ -60,6 +60,14 @@ struct HistoryAndValues: View {
                         .fontWeight(.semibold)
                         .foregroundColor(Color(red: 147/255, green: 129/255, blue: 255/255))
                         .multilineTextAlignment(.center)
+                    
+                    Image("HistoryPicture")
+                        .resizable()
+                        .aspectRatio (contentMode:.fit)
+                        .cornerRadius(15)
+                        .padding(15)
+                    
+                    
                     Text("Deaf people have faced a lot of challenges over the years, but they've also fought hard for their rights. Important values in Deaf culture are keeping sign language alive, communicating openly, and being proud of their heritage and achievements. \n")
                         .font(.headline)
                         .foregroundColor(Color(red: 147/255, green: 129/255, blue: 255/255))
@@ -68,7 +76,7 @@ struct HistoryAndValues: View {
                     
                     
                     Link(destination: URL (string: "https://www.handtalk.me/en/blog/deaf-culture/")!) {
-                        Text("Click me to learn more!")
+                        Text("Click to learn more")
                     }
                     
                     .font(.title3)
@@ -80,6 +88,7 @@ struct HistoryAndValues: View {
                     .cornerRadius(10)
                     
                 }
+                .padding(15)
             }
         }
     }

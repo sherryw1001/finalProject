@@ -60,17 +60,25 @@ struct whatIsDeafCulture: View {
                         .fontWeight(.semibold)
                         .foregroundColor(Color(red: 147/255, green: 129/255, blue: 255/255))
                         .multilineTextAlignment(.center)
+                        .padding(15)
+                    
+                    Image("ASLPicture")
+                        .resizable()
+                        .aspectRatio (contentMode:.fit)
+                        .cornerRadius(15)
+                        .padding(15)
+                    
                     Text("Deaf culture is all about the community of people who are Deaf and use sign language to communicate. It’s a unique way of life that focuses on visual communication and sees being Deaf as a difference, not a disability. \n")
                         .font(.headline)
                         .foregroundColor(Color(red: 147/255, green: 129/255, blue: 255/255))
                         .multilineTextAlignment(.center)
                         .padding(15)
-                        .border(Color.green, width:4)
+                        
                         
                     
                     
                     Link(destination: URL (string: "https://www.handsandvoices.org/comcon/articles/deafculture.htm")!) {
-                        Text("Click me!")
+                        Text("Click to learn more")
                     }
                     
                     .font(.title3)
@@ -80,8 +88,15 @@ struct whatIsDeafCulture: View {
                     .background(Color(red: 147/255, green: 129/255, blue: 1))
                     .foregroundColor(Color(red: 248/255, green: 247/255, blue: 1))
                     .cornerRadius(10)
+                    .padding(15)
+                    
+                    
                     
                 }
+//                .background(Rectangle()
+//                    .foregroundColor(.white))
+//                .cornerRadius(15)
+                
             }
         }
     }

@@ -79,6 +79,7 @@ struct Letters: View {
                 }//end of VStack
             }//end of ZStack
         }//end of Navigation Stack
+        .tint(Color(red: 147/255, green: 129/255, blue: 1))
                 }
         }
 
