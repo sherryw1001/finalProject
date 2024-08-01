@@ -14,7 +14,7 @@ struct ContentView: View {
                 Color(red: 102/255, green: 103/255, blue: 191/255)
                     .ignoresSafeArea()
                 VStack {
-                    Text("Ready to begin your ASL learning journey?")
+                    Text("Ready to begin your American Sign Language learning journey?")
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(Color(red: 248/255, green: 247/255, blue: 1))

@@ -15,6 +15,10 @@
 		8B645A7F2C5A89CC00B219FF /* Basic Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B645A7E2C5A89CC00B219FF /* Basic Words.swift */; };
 		8B645A812C5A89DB00B219FF /* Deaf Culture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B645A802C5A89DB00B219FF /* Deaf Culture.swift */; };
 		8B7ECEB82C593EBB00A3443F /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7ECEB72C593EBB00A3443F /* HomePage.swift */; };
+		C4548C662C5AD79A00EDEEC3 /* alphabetQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4548C652C5AD79A00EDEEC3 /* alphabetQuiz.swift */; };
+		C4548C682C5AD8E900EDEEC3 /* whatIsDeafCulture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4548C672C5AD8E900EDEEC3 /* whatIsDeafCulture.swift */; };
+		C4548C6A2C5AD91D00EDEEC3 /* CulturalBehaviors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4548C692C5AD91D00EDEEC3 /* CulturalBehaviors.swift */; };
+		C4548C6C2C5AD95200EDEEC3 /* HistoryAndValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4548C6B2C5AD95200EDEEC3 /* HistoryAndValues.swift */; };
 		E51BBDE32C5AB8070026278B /* BasicASLQuizStartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBDE22C5AB8070026278B /* BasicASLQuizStartPage.swift */; };
 		E51BBDE52C5ABAFA0026278B /* BasicASLQuizQuestionOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBDE42C5ABAFA0026278B /* BasicASLQuizQuestionOne.swift */; };
 		E51BBDE72C5ABBC50026278B /* BasicASLQuizQuestionTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBDE62C5ABBC50026278B /* BasicASLQuizQuestionTwo.swift */; };
@@ -31,6 +35,10 @@
 		8B645A7E2C5A89CC00B219FF /* Basic Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Basic Words.swift"; sourceTree = "<group>"; };
 		8B645A802C5A89DB00B219FF /* Deaf Culture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Deaf Culture.swift"; sourceTree = "<group>"; };
 		8B7ECEB72C593EBB00A3443F /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		C4548C652C5AD79A00EDEEC3 /* alphabetQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alphabetQuiz.swift; sourceTree = "<group>"; };
+		C4548C672C5AD8E900EDEEC3 /* whatIsDeafCulture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatIsDeafCulture.swift; sourceTree = "<group>"; };
+		C4548C692C5AD91D00EDEEC3 /* CulturalBehaviors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CulturalBehaviors.swift; sourceTree = "<group>"; };
+		C4548C6B2C5AD95200EDEEC3 /* HistoryAndValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryAndValues.swift; sourceTree = "<group>"; };
 		E51BBDE22C5AB8070026278B /* BasicASLQuizStartPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicASLQuizStartPage.swift; sourceTree = "<group>"; };
 		E51BBDE42C5ABAFA0026278B /* BasicASLQuizQuestionOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicASLQuizQuestionOne.swift; sourceTree = "<group>"; };
 		E51BBDE62C5ABBC50026278B /* BasicASLQuizQuestionTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicASLQuizQuestionTwo.swift; sourceTree = "<group>"; };
@@ -53,12 +61,16 @@
 			children = (
 				8B7ECEB72C593EBB00A3443F /* HomePage.swift */,
 				8B645A7C2C5A89C100B219FF /* Letters.swift */,
+				C4548C652C5AD79A00EDEEC3 /* alphabetQuiz.swift */,
 				8B645A7E2C5A89CC00B219FF /* Basic Words.swift */,
 				E51BBDE22C5AB8070026278B /* BasicASLQuizStartPage.swift */,
 				E51BBDE42C5ABAFA0026278B /* BasicASLQuizQuestionOne.swift */,
 				E51BBDE62C5ABBC50026278B /* BasicASLQuizQuestionTwo.swift */,
 				E51BBDE82C5ABC8E0026278B /* BasicASLQuizQuestionThree.swift */,
 				8B645A802C5A89DB00B219FF /* Deaf Culture.swift */,
+				C4548C6B2C5AD95200EDEEC3 /* HistoryAndValues.swift */,
+				C4548C692C5AD91D00EDEEC3 /* CulturalBehaviors.swift */,
+				C4548C672C5AD8E900EDEEC3 /* whatIsDeafCulture.swift */,
 				039CD4F82C5410550004C39F /* finalPproject */,
 				039CD4F72C5410550004C39F /* Products */,
 			);
@@ -164,12 +176,16 @@
 				039CD4FC2C5410550004C39F /* ContentView.swift in Sources */,
 				8B7ECEB82C593EBB00A3443F /* HomePage.swift in Sources */,
 				E51BBDE32C5AB8070026278B /* BasicASLQuizStartPage.swift in Sources */,
+				C4548C6A2C5AD91D00EDEEC3 /* CulturalBehaviors.swift in Sources */,
+				C4548C662C5AD79A00EDEEC3 /* alphabetQuiz.swift in Sources */,
 				039CD4FA2C5410550004C39F /* finalPprojectApp.swift in Sources */,
 				8B645A7D2C5A89C100B219FF /* Letters.swift in Sources */,
+				C4548C682C5AD8E900EDEEC3 /* whatIsDeafCulture.swift in Sources */,
 				E51BBDE52C5ABAFA0026278B /* BasicASLQuizQuestionOne.swift in Sources */,
 				E51BBDE72C5ABBC50026278B /* BasicASLQuizQuestionTwo.swift in Sources */,
 				8B645A7F2C5A89CC00B219FF /* Basic Words.swift in Sources */,
 				8B645A812C5A89DB00B219FF /* Deaf Culture.swift in Sources */,
+				C4548C6C2C5AD95200EDEEC3 /* HistoryAndValues.swift in Sources */,
 				E51BBDE92C5ABC8E0026278B /* BasicASLQuizQuestionThree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
