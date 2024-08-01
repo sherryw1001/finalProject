@@ -23,6 +23,8 @@
 		E51BBDE52C5ABAFA0026278B /* BasicASLQuizQuestionOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBDE42C5ABAFA0026278B /* BasicASLQuizQuestionOne.swift */; };
 		E51BBDE72C5ABBC50026278B /* BasicASLQuizQuestionTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBDE62C5ABBC50026278B /* BasicASLQuizQuestionTwo.swift */; };
 		E51BBDE92C5ABC8E0026278B /* BasicASLQuizQuestionThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBDE82C5ABC8E0026278B /* BasicASLQuizQuestionThree.swift */; };
+		E51BBDEF2C5BCFB80026278B /* BasicASLQuizQuestionFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBDEE2C5BCFB80026278B /* BasicASLQuizQuestionFour.swift */; };
+		E51BBDF12C5BD0180026278B /* BasicASLQuizEndPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBDF02C5BD0180026278B /* BasicASLQuizEndPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		E51BBDE42C5ABAFA0026278B /* BasicASLQuizQuestionOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicASLQuizQuestionOne.swift; sourceTree = "<group>"; };
 		E51BBDE62C5ABBC50026278B /* BasicASLQuizQuestionTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicASLQuizQuestionTwo.swift; sourceTree = "<group>"; };
 		E51BBDE82C5ABC8E0026278B /* BasicASLQuizQuestionThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicASLQuizQuestionThree.swift; sourceTree = "<group>"; };
+		E51BBDEE2C5BCFB80026278B /* BasicASLQuizQuestionFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicASLQuizQuestionFour.swift; sourceTree = "<group>"; };
+		E51BBDF02C5BD0180026278B /* BasicASLQuizEndPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicASLQuizEndPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,8 @@
 				E51BBDE42C5ABAFA0026278B /* BasicASLQuizQuestionOne.swift */,
 				E51BBDE62C5ABBC50026278B /* BasicASLQuizQuestionTwo.swift */,
 				E51BBDE82C5ABC8E0026278B /* BasicASLQuizQuestionThree.swift */,
+				E51BBDEE2C5BCFB80026278B /* BasicASLQuizQuestionFour.swift */,
+				E51BBDF02C5BD0180026278B /* BasicASLQuizEndPage.swift */,
 				8B645A802C5A89DB00B219FF /* Deaf Culture.swift */,
 				C4548C6B2C5AD95200EDEEC3 /* HistoryAndValues.swift */,
 				C4548C692C5AD91D00EDEEC3 /* CulturalBehaviors.swift */,
@@ -174,7 +180,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				039CD4FC2C5410550004C39F /* ContentView.swift in Sources */,
+				E51BBDEF2C5BCFB80026278B /* BasicASLQuizQuestionFour.swift in Sources */,
 				8B7ECEB82C593EBB00A3443F /* HomePage.swift in Sources */,
+				E51BBDF12C5BD0180026278B /* BasicASLQuizEndPage.swift in Sources */,
 				E51BBDE32C5AB8070026278B /* BasicASLQuizStartPage.swift in Sources */,
 				C4548C6A2C5AD91D00EDEEC3 /* CulturalBehaviors.swift in Sources */,
 				C4548C662C5AD79A00EDEEC3 /* alphabetQuiz.swift in Sources */,

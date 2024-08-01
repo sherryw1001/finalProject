@@ -29,7 +29,7 @@ struct ContentView: View {
                 .padding()
                 
             }
-        }
+        }.tint(Color(red: 147/255, green: 129/255, blue: 1))
     }
 }
 

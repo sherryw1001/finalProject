@@ -1,13 +1,13 @@
 //
-//  BasicASLQuizQuestionThree.swift
+//  BasicASLQuizQuestionFour.swift
 //  finalPproject
 //
-//  Created by Reva Choudha on 7/31/24.
+//  Created by Reva Choudha on 8/1/24.
 //
 
 import SwiftUI
 
-struct BasicASLQuizQuestionThree: View {
+struct BasicASLQuizQuestionFour: View {
     @State private var answer = ""
     var body: some View {
         NavigationStack {
@@ -23,17 +23,17 @@ struct BasicASLQuizQuestionThree: View {
                         .font(.callout)
                         .foregroundColor(Color(hue: 0.664, saturation: 0.345, brightness: 0.786))
                     
-                    Image("ThankYouSign").resizable().foregroundColor(Color(red: 1.0, green: 0.0, blue: 0.0, opacity: 1.0)).scaledToFit().frame(width: 300, height: 300).padding()
+                    Image("PleaseSign").resizable().foregroundColor(Color(red: 1.0, green: 0.0, blue: 0.0, opacity: 1.0)).scaledToFit().frame(width: 300, height: 300).padding()
                     
                     Button(action: {
-                        answer = "falseYou'reWelcome"
+                        answer = "falseGoodbye"
                     }) {
                         HStack {
-                            Text("You're Welcome")
+                            Text("Goodbye")
                                 .font(.title3)
                                 .fontWeight(.semibold)
                                 .frame(maxWidth: .infinity, alignment: .leading)
-                            if answer == "falseYou'reWelcome" {
+                            if answer == "falseGoodbye" {
                                 Text ("❌  Try again!")
                                     .font(.body)
                                     .fontWeight(.regular)
@@ -50,18 +50,18 @@ struct BasicASLQuizQuestionThree: View {
                     .frame(maxWidth: .infinity)
                     
                     Button(action: {
-                        answer = "falsePlease"
+                        answer = "truePlease"
                     }) {
                         HStack {
                             Text("Please")
                                 .font(.title3)
                                 .fontWeight(.semibold)
                                 .frame(maxWidth: .infinity, alignment: .leading)
-                            if answer == "falsePlease" {
-                                Text ("❌  Try again!")
+                            if answer == "truePlease" {
+                                Text("✅ Good Job!")
                                     .font(.body)
                                     .fontWeight(.regular)
-                                    .foregroundColor(Color(red: 0.83, green: 0.005, blue: 0.005))
+                                    .foregroundColor(Color(red: -0.024, green: 0.717, blue: 0.003))
                             }
                         }
                         .padding()
@@ -74,18 +74,18 @@ struct BasicASLQuizQuestionThree: View {
                     .frame(maxWidth: .infinity)
                     
                     Button(action: {
-                        answer = "trueThankYou"
+                        answer = "falseSorry"
                     }) {
                         HStack {
-                            Text("Thank You")
+                            Text("Sorry")
                                 .font(.title3)
                                 .fontWeight(.semibold)
                                 .frame(maxWidth: .infinity, alignment: .leading)
-                            if answer == "trueThankYou" {
-                                Text("✅ Good Job!")
+                            if answer == "falseSorry" {
+                                Text ("❌  Try again!")
                                     .font(.body)
                                     .fontWeight(.regular)
-                                    .foregroundColor(Color(red: -0.024, green: 0.717, blue: 0.003))
+                                    .foregroundColor(Color(red: 0.83, green: 0.005, blue: 0.005))
                             }//end of if
                         }//enf of HStack
                         .padding()
@@ -97,8 +97,8 @@ struct BasicASLQuizQuestionThree: View {
                     .controlSize(.large)
                     .frame(maxWidth: .infinity)//end of third button modifiers
                 
-                    NavigationLink(destination: BasicASLQuizQuestionFour()) {
-                        Text("Next Question →")
+                    NavigationLink(destination: BasicASLQuizEndPage()) {
+                        Text("End Quiz →")
                             .foregroundColor(Color(red: 147/255, green: 129/255, blue: 1))
                             .multilineTextAlignment(.trailing)
                     }//end of navigationLink
@@ -109,5 +109,5 @@ struct BasicASLQuizQuestionThree: View {
 }
 
 #Preview {
-    BasicASLQuizQuestionThree()
+    BasicASLQuizQuestionFour()
 }
