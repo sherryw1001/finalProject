@@ -11,7 +11,7 @@ struct whatIsDeafCulture: View {
     var body: some View {
         NavigationStack{
             ZStack{
-                Color(red: 248/255, green: 247/255, blue: 1)
+                Color(red: 255/255, green: 238/255, blue: 221/255)
                     .ignoresSafeArea()
                     .toolbar{
                         HStack{
@@ -58,17 +58,21 @@ struct whatIsDeafCulture: View {
                     Text("What is deaf culture?")
                         .font(.title)
                         .fontWeight(.semibold)
-                        .foregroundColor(Color(red: 102/255, green: 103/255, blue: 191/255))
+                        .foregroundColor(Color(red: 147/255, green: 129/255, blue: 255/255))
                         .multilineTextAlignment(.center)
-                    Text("Deaf culture is all about the community of people who are Deaf and use sign language to communicate. It’s a unique way of life that focuses on visual communication and sees being Deaf as a difference, not a disability. \n                                                                                      LINK: https://www.handsandvoices.org/comcon/articles/deafculture.htm")
+                    Text("Deaf culture is all about the community of people who are Deaf and use sign language to communicate. It’s a unique way of life that focuses on visual communication and sees being Deaf as a difference, not a disability. \n")
                         .font(.headline)
-                        .foregroundColor(Color(red: 102/255, green: 103/255, blue: 191/255))
+                        .foregroundColor(Color(red: 147/255, green: 129/255, blue: 255/255))
                         .multilineTextAlignment(.center)
                         .padding(15)
+                        .border(Color.green, width:4)
+                        
                     
-                    Button("Find out more") {
-                        UIApplication.shared.openURL(URL(string: "http://google.com")!)
+                    
+                    Link(destination: URL (string: "https://www.handsandvoices.org/comcon/articles/deafculture.htm")!) {
+                        Text("Click me!")
                     }
+                    
                     .font(.title3)
                     .fontWeight(.semibold)
                     .multilineTextAlignment(.center)
