@@ -55,7 +55,7 @@ struct whatIsDeafCulture: View {
                     }
                 VStack{
                     
-                    Text("What is deaf culture?")
+                    Text("What is Deaf Culture?")
                         .font(.title)
                         .fontWeight(.semibold)
                         .foregroundColor(Color(red: 147/255, green: 129/255, blue: 255/255))
@@ -88,11 +88,11 @@ struct whatIsDeafCulture: View {
                     .background(Color(red: 147/255, green: 129/255, blue: 1))
                     .foregroundColor(Color(red: 248/255, green: 247/255, blue: 1))
                     .cornerRadius(10)
-                    .padding(15)
                     
                     
                     
                 }
+                .padding()
 //                .background(Rectangle()
 //                    .foregroundColor(.white))
 //                .cornerRadius(15)

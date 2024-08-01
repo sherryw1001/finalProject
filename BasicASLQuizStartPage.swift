@@ -27,10 +27,10 @@ struct BasicASLQuizStartPage: View {
                             .font(.title3)
                             .fontWeight(.semibold)
                             .multilineTextAlignment(.center)
-                            .padding(3)
+                            .padding(7)
                             .background(lightPurple)
                             .foregroundColor(bgColor)
-                            .cornerRadius(10)
+                            .cornerRadius(12)
                         
                     }
                 }
