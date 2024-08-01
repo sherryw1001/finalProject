@@ -21,7 +21,7 @@ struct HistoryAndValues: View {
                                     .aspectRatio (contentMode:.fit)
                                     .cornerRadius(15)
                                 Text("ASL")
-                                    .foregroundColor(Color(red: 0.349, green: 0.163, blue: 0.574))
+                                    .foregroundColor(Color(red: 0, green: 0, blue: 0))
                                 
                             }
                             HStack{

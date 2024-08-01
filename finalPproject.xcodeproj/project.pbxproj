@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		039CD4FA2C5410550004C39F /* finalPprojectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039CD4F92C5410550004C39F /* finalPprojectApp.swift */; };
+		039CD4FC2C5410550004C39F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039CD4FB2C5410550004C39F /* ContentView.swift */; };
+		039CD4FE2C5410560004C39F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039CD4FD2C5410560004C39F /* Assets.xcassets */; };
+		039CD5012C5410560004C39F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039CD5002C5410560004C39F /* Preview Assets.xcassets */; };
+		8B645A7D2C5A89C100B219FF /* Letters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B645A7C2C5A89C100B219FF /* Letters.swift */; };
+		8B645A7F2C5A89CC00B219FF /* Basic Words.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B645A7E2C5A89CC00B219FF /* Basic Words.swift */; };
+		8B645A812C5A89DB00B219FF /* Deaf Culture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B645A802C5A89DB00B219FF /* Deaf Culture.swift */; };
+		8B7ECEB82C593EBB00A3443F /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7ECEB72C593EBB00A3443F /* HomePage.swift */; };
+		C4548C662C5AD79A00EDEEC3 /* alphabetQuiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4548C652C5AD79A00EDEEC3 /* alphabetQuiz.swift */; };
+		C4548C682C5AD8E900EDEEC3 /* whatIsDeafCulture.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4548C672C5AD8E900EDEEC3 /* whatIsDeafCulture.swift */; };
+		C4548C6A2C5AD91D00EDEEC3 /* CulturalBehaviors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4548C692C5AD91D00EDEEC3 /* CulturalBehaviors.swift */; };
+		C4548C6C2C5AD95200EDEEC3 /* HistoryAndValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4548C6B2C5AD95200EDEEC3 /* HistoryAndValues.swift */; };
+		E51BBDE32C5AB8070026278B /* BasicASLQuizStartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBDE22C5AB8070026278B /* BasicASLQuizStartPage.swift */; };
+		E51BBDE52C5ABAFA0026278B /* BasicASLQuizQuestionOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBDE42C5ABAFA0026278B /* BasicASLQuizQuestionOne.swift */; };
+		E51BBDE72C5ABBC50026278B /* BasicASLQuizQuestionTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBDE62C5ABBC50026278B /* BasicASLQuizQuestionTwo.swift */; };
+		E51BBDE92C5ABC8E0026278B /* BasicASLQuizQuestionThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBDE82C5ABC8E0026278B /* BasicASLQuizQuestionThree.swift */; };
+		E51BBDEF2C5BCFB80026278B /* BasicASLQuizQuestionFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBDEE2C5BCFB80026278B /* BasicASLQuizQuestionFour.swift */; };
+		E51BBDF12C5BD0180026278B /* BasicASLQuizEndPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBDF02C5BD0180026278B /* BasicASLQuizEndPage.swift */; };
+		E51BBE1D2C5BF9210026278B /* ASLLettersQuizQuestionOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBE1C2C5BF9210026278B /* ASLLettersQuizQuestionOne.swift */; };
+		E51BBE1F2C5BF9C90026278B /* ASLLettersQuizQuestionTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBE1E2C5BF9C90026278B /* ASLLettersQuizQuestionTwo.swift */; };
+		E51BBE212C5BF9DB0026278B /* ASLLettersQuizQuestionThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBE202C5BF9DB0026278B /* ASLLettersQuizQuestionThree.swift */; };
+		E51BBE232C5BF9F60026278B /* ASLLettersQuizQuestionFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBE222C5BF9F60026278B /* ASLLettersQuizQuestionFour.swift */; };
+		E51BBE252C5BFA0B0026278B /* ASLLettersQuizQuestionFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBE242C5BFA0B0026278B /* ASLLettersQuizQuestionFive.swift */; };
+		E51BBE272C5BFA1E0026278B /* ASLLettersQuizQuestionSix.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBE262C5BFA1E0026278B /* ASLLettersQuizQuestionSix.swift */; };
+		E51BBE292C5BFA300026278B /* ASLLettersQuizEndPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBE282C5BFA300026278B /* ASLLettersQuizEndPage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		039CD4F62C5410550004C39F /* finalPproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finalPproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		039CD4F92C5410550004C39F /* finalPprojectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalPprojectApp.swift; sourceTree = "<group>"; };
+		039CD4FB2C5410550004C39F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		039CD4FD2C5410560004C39F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		039CD5002C5410560004C39F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8B645A7C2C5A89C100B219FF /* Letters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Letters.swift; sourceTree = "<group>"; };
+		8B645A7E2C5A89CC00B219FF /* Basic Words.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Basic Words.swift"; sourceTree = "<group>"; };
+		8B645A802C5A89DB00B219FF /* Deaf Culture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Deaf Culture.swift"; sourceTree = "<group>"; };
+		8B7ECEB72C593EBB00A3443F /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		C4548C652C5AD79A00EDEEC3 /* alphabetQuiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alphabetQuiz.swift; sourceTree = "<group>"; };
+		C4548C672C5AD8E900EDEEC3 /* whatIsDeafCulture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = whatIsDeafCulture.swift; sourceTree = "<group>"; };
+		C4548C692C5AD91D00EDEEC3 /* CulturalBehaviors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CulturalBehaviors.swift; sourceTree = "<group>"; };
+		C4548C6B2C5AD95200EDEEC3 /* HistoryAndValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryAndValues.swift; sourceTree = "<group>"; };
+		E51BBDE22C5AB8070026278B /* BasicASLQuizStartPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicASLQuizStartPage.swift; sourceTree = "<group>"; };
+		E51BBDE42C5ABAFA0026278B /* BasicASLQuizQuestionOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicASLQuizQuestionOne.swift; sourceTree = "<group>"; };
+		E51BBDE62C5ABBC50026278B /* BasicASLQuizQuestionTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicASLQuizQuestionTwo.swift; sourceTree = "<group>"; };
+		E51BBDE82C5ABC8E0026278B /* BasicASLQuizQuestionThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicASLQuizQuestionThree.swift; sourceTree = "<group>"; };
+		E51BBDEE2C5BCFB80026278B /* BasicASLQuizQuestionFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicASLQuizQuestionFour.swift; sourceTree = "<group>"; };
+		E51BBDF02C5BD0180026278B /* BasicASLQuizEndPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicASLQuizEndPage.swift; sourceTree = "<group>"; };
+		E51BBE1C2C5BF9210026278B /* ASLLettersQuizQuestionOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLLettersQuizQuestionOne.swift; sourceTree = "<group>"; };
+		E51BBE1E2C5BF9C90026278B /* ASLLettersQuizQuestionTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLLettersQuizQuestionTwo.swift; sourceTree = "<group>"; };
+		E51BBE202C5BF9DB0026278B /* ASLLettersQuizQuestionThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLLettersQuizQuestionThree.swift; sourceTree = "<group>"; };
+		E51BBE222C5BF9F60026278B /* ASLLettersQuizQuestionFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLLettersQuizQuestionFour.swift; sourceTree = "<group>"; };
+		E51BBE242C5BFA0B0026278B /* ASLLettersQuizQuestionFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLLettersQuizQuestionFive.swift; sourceTree = "<group>"; };
+		E51BBE262C5BFA1E0026278B /* ASLLettersQuizQuestionSix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLLettersQuizQuestionSix.swift; sourceTree = "<group>"; };
+		E51BBE282C5BFA300026278B /* ASLLettersQuizEndPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLLettersQuizEndPage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		039CD4F32C5410550004C39F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		039CD4ED2C5410550004C39F = {
+			isa = PBXGroup;
+			children = (
+				8B7ECEB72C593EBB00A3443F /* HomePage.swift */,
+				8B645A7C2C5A89C100B219FF /* Letters.swift */,
+				C4548C652C5AD79A00EDEEC3 /* alphabetQuiz.swift */,
+				E51BBE1C2C5BF9210026278B /* ASLLettersQuizQuestionOne.swift */,
+				E51BBE1E2C5BF9C90026278B /* ASLLettersQuizQuestionTwo.swift */,
+				E51BBE202C5BF9DB0026278B /* ASLLettersQuizQuestionThree.swift */,
+				E51BBE222C5BF9F60026278B /* ASLLettersQuizQuestionFour.swift */,
+				E51BBE242C5BFA0B0026278B /* ASLLettersQuizQuestionFive.swift */,
+				E51BBE262C5BFA1E0026278B /* ASLLettersQuizQuestionSix.swift */,
+				E51BBE282C5BFA300026278B /* ASLLettersQuizEndPage.swift */,
+				8B645A7E2C5A89CC00B219FF /* Basic Words.swift */,
+				E51BBDE22C5AB8070026278B /* BasicASLQuizStartPage.swift */,
+				E51BBDE42C5ABAFA0026278B /* BasicASLQuizQuestionOne.swift */,
+				E51BBDE62C5ABBC50026278B /* BasicASLQuizQuestionTwo.swift */,
+				E51BBDE82C5ABC8E0026278B /* BasicASLQuizQuestionThree.swift */,
+				E51BBDEE2C5BCFB80026278B /* BasicASLQuizQuestionFour.swift */,
+				E51BBDF02C5BD0180026278B /* BasicASLQuizEndPage.swift */,
+				8B645A802C5A89DB00B219FF /* Deaf Culture.swift */,
+				C4548C6B2C5AD95200EDEEC3 /* HistoryAndValues.swift */,
+				C4548C692C5AD91D00EDEEC3 /* CulturalBehaviors.swift */,
+				C4548C672C5AD8E900EDEEC3 /* whatIsDeafCulture.swift */,
+				039CD4F82C5410550004C39F /* finalPproject */,
+				039CD4F72C5410550004C39F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		039CD4F72C5410550004C39F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				039CD4F62C5410550004C39F /* finalPproject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		039CD4F82C5410550004C39F /* finalPproject */ = {
+			isa = PBXGroup;
+			children = (
+				039CD4F92C5410550004C39F /* finalPprojectApp.swift */,
+				039CD4FB2C5410550004C39F /* ContentView.swift */,
+				039CD4FD2C5410560004C39F /* Assets.xcassets */,
+				039CD4FF2C5410560004C39F /* Preview Content */,
+			);
+			path = finalPproject;
+			sourceTree = "<group>";
+		};
+		039CD4FF2C5410560004C39F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				039CD5002C5410560004C39F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		039CD4F52C5410550004C39F /* finalPproject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 039CD5042C5410560004C39F /* Build configuration list for PBXNativeTarget "finalPproject" */;
+			buildPhases = (
+				039CD4F22C5410550004C39F /* Sources */,
+				039CD4F32C5410550004C39F /* Frameworks */,
+				039CD4F42C5410550004C39F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = finalPproject;
+			productName = finalPproject;
+			productReference = 039CD4F62C5410550004C39F /* finalPproject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		039CD4EE2C5410550004C39F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					039CD4F52C5410550004C39F = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 039CD4F12C5410550004C39F /* Build configuration list for PBXProject "finalPproject" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 039CD4ED2C5410550004C39F;
+			productRefGroup = 039CD4F72C5410550004C39F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				039CD4F52C5410550004C39F /* finalPproject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		039CD4F42C5410550004C39F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039CD5012C5410560004C39F /* Preview Assets.xcassets in Resources */,
+				039CD4FE2C5410560004C39F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		039CD4F22C5410550004C39F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039CD4FC2C5410550004C39F /* ContentView.swift in Sources */,
+				E51BBDEF2C5BCFB80026278B /* BasicASLQuizQuestionFour.swift in Sources */,
+				8B7ECEB82C593EBB00A3443F /* HomePage.swift in Sources */,
+				E51BBDF12C5BD0180026278B /* BasicASLQuizEndPage.swift in Sources */,
+				E51BBE272C5BFA1E0026278B /* ASLLettersQuizQuestionSix.swift in Sources */,
+				E51BBDE32C5AB8070026278B /* BasicASLQuizStartPage.swift in Sources */,
+				E51BBE1D2C5BF9210026278B /* ASLLettersQuizQuestionOne.swift in Sources */,
+				C4548C6A2C5AD91D00EDEEC3 /* CulturalBehaviors.swift in Sources */,
+				C4548C662C5AD79A00EDEEC3 /* alphabetQuiz.swift in Sources */,
+				039CD4FA2C5410550004C39F /* finalPprojectApp.swift in Sources */,
+				8B645A7D2C5A89C100B219FF /* Letters.swift in Sources */,
+				E51BBE232C5BF9F60026278B /* ASLLettersQuizQuestionFour.swift in Sources */,
+				C4548C682C5AD8E900EDEEC3 /* whatIsDeafCulture.swift in Sources */,
+				E51BBDE52C5ABAFA0026278B /* BasicASLQuizQuestionOne.swift in Sources */,
+				E51BBE292C5BFA300026278B /* ASLLettersQuizEndPage.swift in Sources */,
+				E51BBDE72C5ABBC50026278B /* BasicASLQuizQuestionTwo.swift in Sources */,
+				8B645A7F2C5A89CC00B219FF /* Basic Words.swift in Sources */,
+				8B645A812C5A89DB00B219FF /* Deaf Culture.swift in Sources */,
+				C4548C6C2C5AD95200EDEEC3 /* HistoryAndValues.swift in Sources */,
+				E51BBE1F2C5BF9C90026278B /* ASLLettersQuizQuestionTwo.swift in Sources */,
+				E51BBE252C5BFA0B0026278B /* ASLLettersQuizQuestionFive.swift in Sources */,
+				E51BBE212C5BF9DB0026278B /* ASLLettersQuizQuestionThree.swift in Sources */,
+				E51BBDE92C5ABC8E0026278B /* BasicASLQuizQuestionThree.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		039CD5022C5410560004C39F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		039CD5032C5410560004C39F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		039CD5052C5410560004C39F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"finalPproject/Preview Content\"";
+				DEVELOPMENT_TEAM = 227922DLU7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.finalPproject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		039CD5062C5410560004C39F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"finalPproject/Preview Content\"";
+				DEVELOPMENT_TEAM = 227922DLU7;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.finalPproject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		039CD4F12C5410550004C39F /* Build configuration list for PBXProject "finalPproject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				039CD5022C5410560004C39F /* Debug */,
+				039CD5032C5410560004C39F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		039CD5042C5410560004C39F /* Build configuration list for PBXNativeTarget "finalPproject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				039CD5052C5410560004C39F /* Debug */,
+				039CD5062C5410560004C39F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 039CD4EE2C5410550004C39F /* Project object */;
+}
