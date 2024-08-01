@@ -35,7 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		039CD4F62C5410550004C39F /* finalPproject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finalPproject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		039CD4F62C5410550004C39F /* Hearing Hand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hearing Hand.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		039CD4F92C5410550004C39F /* finalPprojectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalPprojectApp.swift; sourceTree = "<group>"; };
 		039CD4FB2C5410550004C39F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		039CD4FD2C5410560004C39F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,7 +106,7 @@
 		039CD4F72C5410550004C39F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				039CD4F62C5410550004C39F /* finalPproject.app */,
+				039CD4F62C5410550004C39F /* Hearing Hand.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,9 +133,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		039CD4F52C5410550004C39F /* finalPproject */ = {
+		039CD4F52C5410550004C39F /* Hearing Hand */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 039CD5042C5410560004C39F /* Build configuration list for PBXNativeTarget "finalPproject" */;
+			buildConfigurationList = 039CD5042C5410560004C39F /* Build configuration list for PBXNativeTarget "Hearing Hand" */;
 			buildPhases = (
 				039CD4F22C5410550004C39F /* Sources */,
 				039CD4F32C5410550004C39F /* Frameworks */,
@@ -145,9 +145,9 @@
 			);
 			dependencies = (
 			);
-			name = finalPproject;
+			name = "Hearing Hand";
 			productName = finalPproject;
-			productReference = 039CD4F62C5410550004C39F /* finalPproject.app */;
+			productReference = 039CD4F62C5410550004C39F /* Hearing Hand.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -165,7 +165,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 039CD4F12C5410550004C39F /* Build configuration list for PBXProject "finalPproject" */;
+			buildConfigurationList = 039CD4F12C5410550004C39F /* Build configuration list for PBXProject "Hearing Hand" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -178,7 +178,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				039CD4F52C5410550004C39F /* finalPproject */,
+				039CD4F52C5410550004C39F /* Hearing Hand */,
 			);
 		};
 /* End PBXProject section */
@@ -409,7 +409,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		039CD4F12C5410550004C39F /* Build configuration list for PBXProject "finalPproject" */ = {
+		039CD4F12C5410550004C39F /* Build configuration list for PBXProject "Hearing Hand" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				039CD5022C5410560004C39F /* Debug */,
@@ -418,7 +418,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		039CD5042C5410560004C39F /* Build configuration list for PBXNativeTarget "finalPproject" */ = {
+		039CD5042C5410560004C39F /* Build configuration list for PBXNativeTarget "Hearing Hand" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				039CD5052C5410560004C39F /* Debug */,
