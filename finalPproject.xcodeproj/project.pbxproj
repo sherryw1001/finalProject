@@ -32,6 +32,7 @@
 		E51BBE252C5BFA0B0026278B /* ASLLettersQuizQuestionFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBE242C5BFA0B0026278B /* ASLLettersQuizQuestionFive.swift */; };
 		E51BBE272C5BFA1E0026278B /* ASLLettersQuizQuestionSix.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBE262C5BFA1E0026278B /* ASLLettersQuizQuestionSix.swift */; };
 		E51BBE292C5BFA300026278B /* ASLLettersQuizEndPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBE282C5BFA300026278B /* ASLLettersQuizEndPage.swift */; };
+		E59530A82CD0532900179742 /* StateManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59530A72CD0532900179742 /* StateManagement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		E51BBE242C5BFA0B0026278B /* ASLLettersQuizQuestionFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLLettersQuizQuestionFive.swift; sourceTree = "<group>"; };
 		E51BBE262C5BFA1E0026278B /* ASLLettersQuizQuestionSix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLLettersQuizQuestionSix.swift; sourceTree = "<group>"; };
 		E51BBE282C5BFA300026278B /* ASLLettersQuizEndPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLLettersQuizEndPage.swift; sourceTree = "<group>"; };
+		E59530A72CD0532900179742 /* StateManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManagement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			children = (
 				039CD4F92C5410550004C39F /* finalPprojectApp.swift */,
 				039CD4FB2C5410550004C39F /* ContentView.swift */,
+				E59530A72CD0532900179742 /* StateManagement.swift */,
 				039CD4FD2C5410560004C39F /* Assets.xcassets */,
 				039CD4FF2C5410560004C39F /* Preview Content */,
 			);
@@ -222,6 +225,7 @@
 				E51BBE1F2C5BF9C90026278B /* ASLLettersQuizQuestionTwo.swift in Sources */,
 				E51BBE252C5BFA0B0026278B /* ASLLettersQuizQuestionFive.swift in Sources */,
 				E51BBE212C5BF9DB0026278B /* ASLLettersQuizQuestionThree.swift in Sources */,
+				E59530A82CD0532900179742 /* StateManagement.swift in Sources */,
 				E51BBDE92C5ABC8E0026278B /* BasicASLQuizQuestionThree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
