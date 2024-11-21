@@ -33,6 +33,7 @@
 		E51BBE272C5BFA1E0026278B /* ASLLettersQuizQuestionSix.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBE262C5BFA1E0026278B /* ASLLettersQuizQuestionSix.swift */; };
 		E51BBE292C5BFA300026278B /* ASLLettersQuizEndPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBE282C5BFA300026278B /* ASLLettersQuizEndPage.swift */; };
 		E59530A82CD0532900179742 /* StateManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59530A72CD0532900179742 /* StateManagement.swift */; };
+		E5F0CB1C2CEEB54900FA3707 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F0CB1B2CEEB54600FA3707 /* Pair.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		E51BBE262C5BFA1E0026278B /* ASLLettersQuizQuestionSix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLLettersQuizQuestionSix.swift; sourceTree = "<group>"; };
 		E51BBE282C5BFA300026278B /* ASLLettersQuizEndPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLLettersQuizEndPage.swift; sourceTree = "<group>"; };
 		E59530A72CD0532900179742 /* StateManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManagement.swift; sourceTree = "<group>"; };
+		E5F0CB1B2CEEB54600FA3707 /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				E51BBE202C5BF9DB0026278B /* ASLLettersQuizQuestionThree.swift */,
 				E51BBE222C5BF9F60026278B /* ASLLettersQuizQuestionFour.swift */,
 				E51BBE242C5BFA0B0026278B /* ASLLettersQuizQuestionFive.swift */,
+				E5F0CB1B2CEEB54600FA3707 /* Pair.swift */,
 				E51BBE262C5BFA1E0026278B /* ASLLettersQuizQuestionSix.swift */,
 				E51BBE282C5BFA300026278B /* ASLLettersQuizEndPage.swift */,
 				8B645A7E2C5A89CC00B219FF /* Basic Words.swift */,
@@ -206,6 +209,7 @@
 				039CD4FC2C5410550004C39F /* ContentView.swift in Sources */,
 				E51BBDEF2C5BCFB80026278B /* BasicASLQuizQuestionFour.swift in Sources */,
 				8B7ECEB82C593EBB00A3443F /* HomePage.swift in Sources */,
+				E5F0CB1C2CEEB54900FA3707 /* Pair.swift in Sources */,
 				E51BBDF12C5BD0180026278B /* BasicASLQuizEndPage.swift in Sources */,
 				E51BBE272C5BFA1E0026278B /* ASLLettersQuizQuestionSix.swift in Sources */,
 				E51BBDE32C5AB8070026278B /* BasicASLQuizStartPage.swift in Sources */,
