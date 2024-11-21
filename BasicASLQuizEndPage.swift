@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct BasicASLQuizEndPage: View {
+    
+    init(score: Int){
+        self.score = score
+    }
+    
+    @State var score: Int
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -39,5 +46,5 @@ struct BasicASLQuizEndPage: View {
 }
 
 #Preview {
-    BasicASLQuizEndPage()
+    BasicASLQuizEndPage(score: 0)
 }

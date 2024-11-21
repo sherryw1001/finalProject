@@ -63,7 +63,7 @@ struct ASLLettersQuizQuestionSix: View {
                             .foregroundColor(Color(red: 0.83, green: 0.005, blue: 0.005))
                     }
                     
-                    NavigationLink(destination: ASLLettersQuizEndPage()) {
+                    NavigationLink(destination: ASLLettersQuizEndPage(score: 0)) {
                         Text("End Quiz →")
                             .foregroundColor(Color(red: 147/255, green: 129/255, blue: 1))
                             .multilineTextAlignment(.trailing)

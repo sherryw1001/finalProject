@@ -13,16 +13,36 @@ class StateManagement {
     var longestStreak: Int = 0
     var diamonds: Int = 0
     var lastChallengeDate: Date
+<<<<<<< Updated upstream
     static let letters: [String] = ["G", "L", "R", "T", "Y", "A"]
     static let words: [String] = ["Hello", "Please", "ThankYou", "Yes"]
     var quiz: [Pair<String, String>]
+=======
+    var quiz: [Character]
+    var challenge: [String]
+    let defaults = UserDefaults.standard
+    
+    static let challengeValues: [String] = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "W", "X", "Y", "Z", "Hello", "Please", "ThankYou", "Yes", "YoureWelcome", "Sorry", "No", "ILoveYou", "Goodbye"]
+    
+    static let lettersQuizValues: [Character] = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "W", "X", "Y", "Z"]
+>>>>>>> Stashed changes
     
     init(){
         lastChallengeDate = Date.now
+        if let savedChallengeDate = defaults.string(forKey: "lastChallengeDate") {
+            let dateformatter = ISO8601DateFormatter()
+            lastChallengeDate = dateformatter.date(from: savedChallengeDate)!
+        }
+        streak = defaults.integer(forKey: "streak")
+        longestStreak = defaults.integer(forKey: "longestStreak")
+        quiz = []
+        challenge = []
     }
     
     init(challengeDate: Date) {
         lastChallengeDate = challengeDate
+        quiz = []
+        challenge = []
     }
     
     func generateQuiz(_ size: Int) {
@@ -43,14 +63,20 @@ class StateManagement {
         return longestStreak
     }
     
+    func setChallenge() {
+        lastChallengeDate = Date.now
+        streak += 1
+    }
+    
     func getCurrentStreak()-> Int{
-        var currentDate = Calendar.current.date(byAdding: .day, value: -1, to: Date.now)!
+        let currentDate = Calendar.current.date(byAdding: .day, value: -1, to: Date.now)!
         if (lastChallengeDate.compare(currentDate) == ComparisonResult.orderedAscending) {
             if (streak > longestStreak) {
                 longestStreak = streak
             }
             streak = 0
         }
+        
         
         return streak
     }

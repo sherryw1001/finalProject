@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct HomePage: View {
+    let challenge: StateManagement
+    init() {
+        challenge = StateManagement()
+        challenge.challenge = Array(StateManagement.challengeValues.shuffled()[0...8])
+    }
     var body: some View {
         NavigationStack{
             ZStack{
@@ -113,6 +118,27 @@ struct HomePage: View {
                             //                                .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 5)
                             
                         }
+                    }
+                        
+                    NavigationLink(destination:DailyChallengeQuestion(state: challenge)) {
+                            HStack{
+                                Text("Daily Challenge")
+                                    .font(.title)
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(Color(red: 255/255, green:238/255, blue:221/255 ))
+                                    .multilineTextAlignment(.leading)
+                                
+                                
+                                    .padding(35)
+                                    .background(Rectangle())
+                                    .foregroundColor(Color(red: 184/255, green: 184/255, blue: 255/255))
+                                
+                                    .cornerRadius(15)
+                                
+                                    .padding(30)
+                                //                                .border(/*@START_MENU_TOKEN@*/Color.black/*@END_MENU_TOKEN@*/, width: 5)
+                                
+                            }
                     }
                     
                 }

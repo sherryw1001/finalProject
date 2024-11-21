@@ -97,7 +97,7 @@ struct BasicASLQuizQuestionFour: View {
                     .controlSize(.large)
                     .frame(maxWidth: .infinity)//end of third button modifiers
                 
-                    NavigationLink(destination: BasicASLQuizEndPage()) {
+                    NavigationLink(destination: BasicASLQuizEndPage(score: 0)) {
                         Text("End Quiz →")
                             .foregroundColor(Color(red: 147/255, green: 129/255, blue: 1))
                             .multilineTextAlignment(.trailing)
