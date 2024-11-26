@@ -17,7 +17,7 @@ import SwiftUI
 
 struct DailyChallengeQuestion: View {
     
-    @State private var stateSystem: StateManagement?
+    @State private var stateSystem: StateManagement
     @State private var questionNum: Int
     @State private var currentScore: Int
     @State private var sign: String
@@ -25,23 +25,23 @@ struct DailyChallengeQuestion: View {
     @State private var signValues: [String]
     @State private var answer: [String]
     
-    init(number: Int = 0, score: Int = 0, state: StateManagement? = nil) {
-        var strings = StateManagement.challengeValues.shuffled()
+    init(number: Int = 0, score: Int = 0, state: StateManagement) {
+        var strings: [String]
         stateSystem = state
         questionNum = number
         currentScore = score
         var tempString: String = ""
         var tempStrings: [String]
         answer = [" ", " ", " "]
-      
-        
-      if(state == nil) {
-          tempString = strings[0] // 65 = A 91 = Z
-      } else {
-        tempString = state!.challenge[number] // 65 = A 91 = Z
-          strings = strings.filter{$0 != tempString}
-      }
-      sign = "\(tempString)Sign"
+        tempString = state.quiz[number].second // 65 = A 91 = Z
+        if (state.quiz[number].first == "letter"){
+            strings = StateManagement.letters.shuffled()
+        }
+        else {
+            strings = StateManagement.words.shuffled()
+        }
+        strings = strings.filter{$0 != tempString}
+        sign = "\(tempString)Sign"
         tempStrings = [tempString, strings[1], strings[2]].shuffled()
 
         signValue = tempString
@@ -60,7 +60,7 @@ struct DailyChallengeQuestion: View {
                         .fontWeight(.semibold)
                         .foregroundColor(Color(red: 102/255, green: 103/255, blue: 191/255))
                     
-                    Text("Choose the word that matches the sign below:")
+                    Text("Choose best meaning of the sign below:")
                         .font(.callout)
                         .foregroundColor(Color(hue: 0.664, saturation: 0.345, brightness: 0.786))
                     
@@ -102,7 +102,7 @@ struct DailyChallengeQuestion: View {
                       .frame(maxWidth: .infinity)
                     }
 
-                    if(questionNum < 10 && (stateSystem==nil || stateSystem!.challenge.count > questionNum + 1)) {
+                    if (stateSystem.quiz.count > questionNum + 1) {
                         NavigationLink(destination: DailyChallengeQuestion(number: questionNum + 1, score: currentScore, state: stateSystem)) {
                             Text("Next Question →")
                                 .foregroundColor(Color(red: 147/255, green: 129/255, blue: 1))

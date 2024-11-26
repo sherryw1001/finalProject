@@ -35,6 +35,9 @@
 		E5880BDD2CEECA8E00DAFF15 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E5880BDC2CEECA8500DAFF15 /* .gitignore */; };
 		E59530A82CD0532900179742 /* StateManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59530A72CD0532900179742 /* StateManagement.swift */; };
 		E5F0CB1C2CEEB54900FA3707 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F0CB1B2CEEB54600FA3707 /* Pair.swift */; };
+		E5FD66C22CEECBD300742F77 /* DailyChallengeQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FD66C02CEECBD300742F77 /* DailyChallengeQuestion.swift */; };
+		E5FD66C32CEECBD300742F77 /* ASLLettersQuizQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5FD66BF2CEECBD300742F77 /* ASLLettersQuizQuestion.swift */; };
+		E5FD66C42CEECBD300742F77 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E5FD66C12CEECBD300742F77 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +70,9 @@
 		E5880BDC2CEECA8500DAFF15 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		E59530A72CD0532900179742 /* StateManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManagement.swift; sourceTree = "<group>"; };
 		E5F0CB1B2CEEB54600FA3707 /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
+		E5FD66BF2CEECBD300742F77 /* ASLLettersQuizQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLLettersQuizQuestion.swift; sourceTree = "<group>"; };
+		E5FD66C02CEECBD300742F77 /* DailyChallengeQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyChallengeQuestion.swift; sourceTree = "<group>"; };
+		E5FD66C12CEECBD300742F77 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,9 @@
 		039CD4ED2C5410550004C39F = {
 			isa = PBXGroup;
 			children = (
+				E5FD66BF2CEECBD300742F77 /* ASLLettersQuizQuestion.swift */,
+				E5FD66C02CEECBD300742F77 /* DailyChallengeQuestion.swift */,
+				E5FD66C12CEECBD300742F77 /* README.md */,
 				E5880BDC2CEECA8500DAFF15 /* .gitignore */,
 				8B7ECEB72C593EBB00A3443F /* HomePage.swift */,
 				8B645A7C2C5A89C100B219FF /* Letters.swift */,
@@ -199,6 +208,7 @@
 			files = (
 				039CD5012C5410560004C39F /* Preview Assets.xcassets in Resources */,
 				E5880BDD2CEECA8E00DAFF15 /* .gitignore in Resources */,
+				E5FD66C42CEECBD300742F77 /* README.md in Resources */,
 				039CD4FE2C5410560004C39F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +220,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5FD66C22CEECBD300742F77 /* DailyChallengeQuestion.swift in Sources */,
+				E5FD66C32CEECBD300742F77 /* ASLLettersQuizQuestion.swift in Sources */,
 				039CD4FC2C5410550004C39F /* ContentView.swift in Sources */,
 				E51BBDEF2C5BCFB80026278B /* BasicASLQuizQuestionFour.swift in Sources */,
 				8B7ECEB82C593EBB00A3443F /* HomePage.swift in Sources */,

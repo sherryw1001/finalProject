@@ -21,24 +21,24 @@ struct ASLLettersQuizQuestion: View {
     @State private var questionNum: Int
     @State private var currentScore: Int
     @State private var sign: String
-    @State private var letter: Character
-    @State private var letters: [Character]
-    @State private var answer: [Character]
+    @State private var letter: String
+    @State private var letters: [String]
+    @State private var answer: [String]
     
     init(number: Int = 0, score: Int = 0, state: StateManagement? = nil) {
-        var characters = StateManagement.lettersQuizValues.shuffled()
+        var characters = StateManagement.letters.shuffled()
         stateSystem = state
         questionNum = number
         currentScore = score
-        var tempLetter: Character
-        var tempLetters: [Character]
+        var tempLetter: String
+        var tempLetters: [String]
         answer = [" ", " ", " "]
       
         
       if(state == nil) {
           tempLetter = characters[0] // 65 = A 91 = Z
       } else {
-        tempLetter = state!.quiz[number] // 65 = A 91 = Z
+          tempLetter = state!.quiz[number].second // 65 = A 91 = Z
           characters = characters.filter{$0 != tempLetter}
       }
       sign = "\(tempLetter)Sign"

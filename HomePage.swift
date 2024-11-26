@@ -11,7 +11,7 @@ struct HomePage: View {
     let challenge: StateManagement
     init() {
         challenge = StateManagement()
-        challenge.challenge = Array(StateManagement.challengeValues.shuffled()[0...8])
+        challenge.generateQuiz(8, domain: 2)
     }
     var body: some View {
         NavigationStack{

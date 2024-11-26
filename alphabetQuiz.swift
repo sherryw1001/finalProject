@@ -15,7 +15,7 @@ struct alphabetQuiz: View {
     
     init(){
         quizManager = StateManagement()
-        quizManager.quiz = Array(StateManagement.lettersQuizValues.shuffled()[0...8])
+        quizManager.generateQuiz(8, domain: 0)
     }
     var body: some View {
         NavigationStack {
@@ -28,7 +28,7 @@ struct alphabetQuiz: View {
                         .foregroundColor(darkPurple)
                         .multilineTextAlignment(.center)
                         .padding()
-                    NavigationLink(destination: ASLLettersQuizQuestion(state: quizManager)) {
+                    NavigationLink(destination: DailyChallengeQuestion(state: quizManager)) {
                         Text("Start!   ")
                             .font(.title3)
                             .fontWeight(.semibold)
