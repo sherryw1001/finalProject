@@ -8,10 +8,8 @@
 import SwiftUI
 
 struct HomePage: View {
-    let challenge: StateManagement
     init() {
-        challenge = StateManagement()
-        challenge.generateQuiz(8, domain: 2)
+        StateManagement.shared.generateQuiz(8, domain: 2)
     }
     var body: some View {
         NavigationStack{
@@ -120,7 +118,7 @@ struct HomePage: View {
                         }
                     }
                         
-                    NavigationLink(destination:DailyChallengeQuestion(state: challenge)) {
+                    NavigationLink(destination:DailyChallengeQuestion()) {
                             HStack{
                                 Text("Daily Challenge")
                                     .font(.title)

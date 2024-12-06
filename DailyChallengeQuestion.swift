@@ -17,7 +17,6 @@ import SwiftUI
 
 struct DailyChallengeQuestion: View {
     
-    @State private var stateSystem: StateManagement
     @State private var questionNum: Int
     @State private var currentScore: Int
     @State private var sign: String
@@ -25,16 +24,15 @@ struct DailyChallengeQuestion: View {
     @State private var signValues: [String]
     @State private var answer: [String]
     
-    init(number: Int = 0, score: Int = 0, state: StateManagement) {
+    init(number: Int = 0, score: Int = 0) {
         var strings: [String]
-        stateSystem = state
         questionNum = number
         currentScore = score
         var tempString: String = ""
         var tempStrings: [String]
         answer = [" ", " ", " "]
-        tempString = state.quiz[number].second // 65 = A 91 = Z
-        if (state.quiz[number].first == "letter"){
+        tempString = StateManagement.shared.quiz[number].second // 65 = A 91 = Z
+        if (StateManagement.shared.quiz[number].first == "letter"){
             strings = StateManagement.letters.shuffled()
         }
         else {
@@ -102,8 +100,8 @@ struct DailyChallengeQuestion: View {
                       .frame(maxWidth: .infinity)
                     }
 
-                    if (stateSystem.quiz.count > questionNum + 1) {
-                        NavigationLink(destination: DailyChallengeQuestion(number: questionNum + 1, score: currentScore, state: stateSystem)) {
+                    if (StateManagement.shared.quiz.count > questionNum + 1) {
+                        NavigationLink(destination: DailyChallengeQuestion(number: questionNum + 1, score: currentScore)) {
                             Text("Next Question →")
                                 .foregroundColor(Color(red: 147/255, green: 129/255, blue: 1))
                                 .multilineTextAlignment(.trailing)

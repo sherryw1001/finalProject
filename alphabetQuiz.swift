@@ -11,11 +11,9 @@ struct alphabetQuiz: View {
     let bgColor = Color(red: 248/255, green: 247/255, blue: 1)
     let darkPurple = Color(red: 102/255, green: 103/255, blue: 191/255)
     let lightPurple = Color(red: 147/255, green: 129/255, blue: 1)
-    @State var quizManager: StateManagement
     
     init(){
-        quizManager = StateManagement()
-        quizManager.generateQuiz(8, domain: 0)
+        StateManagement.shared.generateQuiz(8, domain: 0)
     }
     var body: some View {
         NavigationStack {
@@ -28,7 +26,7 @@ struct alphabetQuiz: View {
                         .foregroundColor(darkPurple)
                         .multilineTextAlignment(.center)
                         .padding()
-                    NavigationLink(destination: DailyChallengeQuestion(state: quizManager)) {
+                    NavigationLink(destination: DailyChallengeQuestion()) {
                         Text("Start!   ")
                             .font(.title3)
                             .fontWeight(.semibold)

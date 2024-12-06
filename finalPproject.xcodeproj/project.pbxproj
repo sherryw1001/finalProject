@@ -32,6 +32,7 @@
 		E51BBE252C5BFA0B0026278B /* ASLLettersQuizQuestionFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBE242C5BFA0B0026278B /* ASLLettersQuizQuestionFive.swift */; };
 		E51BBE272C5BFA1E0026278B /* ASLLettersQuizQuestionSix.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBE262C5BFA1E0026278B /* ASLLettersQuizQuestionSix.swift */; };
 		E51BBE292C5BFA300026278B /* ASLLettersQuizEndPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBE282C5BFA300026278B /* ASLLettersQuizEndPage.swift */; };
+		E55625882CFAB91D00B97380 /* DailyChallengeEndPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55625872CFAB91400B97380 /* DailyChallengeEndPage.swift */; };
 		E5880BDD2CEECA8E00DAFF15 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E5880BDC2CEECA8500DAFF15 /* .gitignore */; };
 		E59530A82CD0532900179742 /* StateManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59530A72CD0532900179742 /* StateManagement.swift */; };
 		E5F0CB1C2CEEB54900FA3707 /* Pair.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F0CB1B2CEEB54600FA3707 /* Pair.swift */; };
@@ -67,6 +68,7 @@
 		E51BBE242C5BFA0B0026278B /* ASLLettersQuizQuestionFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLLettersQuizQuestionFive.swift; sourceTree = "<group>"; };
 		E51BBE262C5BFA1E0026278B /* ASLLettersQuizQuestionSix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLLettersQuizQuestionSix.swift; sourceTree = "<group>"; };
 		E51BBE282C5BFA300026278B /* ASLLettersQuizEndPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASLLettersQuizEndPage.swift; sourceTree = "<group>"; };
+		E55625872CFAB91400B97380 /* DailyChallengeEndPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyChallengeEndPage.swift; sourceTree = "<group>"; };
 		E5880BDC2CEECA8500DAFF15 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		E59530A72CD0532900179742 /* StateManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManagement.swift; sourceTree = "<group>"; };
 		E5F0CB1B2CEEB54600FA3707 /* Pair.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pair.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				E5F0CB1B2CEEB54600FA3707 /* Pair.swift */,
 				E51BBE262C5BFA1E0026278B /* ASLLettersQuizQuestionSix.swift */,
 				E51BBE282C5BFA300026278B /* ASLLettersQuizEndPage.swift */,
+				E55625872CFAB91400B97380 /* DailyChallengeEndPage.swift */,
 				8B645A7E2C5A89CC00B219FF /* Basic Words.swift */,
 				E51BBDE22C5AB8070026278B /* BasicASLQuizStartPage.swift */,
 				E51BBDE42C5ABAFA0026278B /* BasicASLQuizQuestionOne.swift */,
@@ -236,6 +239,7 @@
 				8B645A7D2C5A89C100B219FF /* Letters.swift in Sources */,
 				E51BBE232C5BF9F60026278B /* ASLLettersQuizQuestionFour.swift in Sources */,
 				C4548C682C5AD8E900EDEEC3 /* whatIsDeafCulture.swift in Sources */,
+				E55625882CFAB91D00B97380 /* DailyChallengeEndPage.swift in Sources */,
 				E51BBDE52C5ABAFA0026278B /* BasicASLQuizQuestionOne.swift in Sources */,
 				E51BBE292C5BFA300026278B /* ASLLettersQuizEndPage.swift in Sources */,
 				E51BBDE72C5ABBC50026278B /* BasicASLQuizQuestionTwo.swift in Sources */,

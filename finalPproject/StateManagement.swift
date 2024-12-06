@@ -18,7 +18,9 @@ class StateManagement {
     var quiz: [Pair<String, String>]
     let defaults = UserDefaults.standard
     
-    init(){
+    static let shared = StateManagement()
+    
+    private init(){
         lastChallengeDate = Date.now
         if let savedChallengeDate = defaults.string(forKey: "lastChallengeDate") {
             let dateformatter = ISO8601DateFormatter()
@@ -26,19 +28,16 @@ class StateManagement {
         }
         streak = defaults.integer(forKey: "streak")
         longestStreak = defaults.integer(forKey: "longestStreak")
+        dailyChallengeScore = defaults.integer(forKey: "challengeScore")
         quiz = []
-    }
-    
-    init(challengeDate: Date) {
-        lastChallengeDate = challengeDate
-        quiz = []
+        generateQuiz(2, domain: 2)
     }
     
     func getValue(_ type: Int) -> Pair<String, String> {
         if type == 0 {
-            return Pair(first:"letter", second:StateManagement.letters[Int.random(in:0...StateManagement.letters.count)])
+            return Pair(first:"letter", second:StateManagement.letters[Int.random(in:0..<StateManagement.letters.count)])
         }
-        return Pair(first:"word", second:StateManagement.words[Int.random(in:0...StateManagement.words.count)])
+        return Pair(first:"word", second:StateManagement.words[Int.random(in:0..<StateManagement.words.count)])
     }
     
     func generateQuiz(_ size: Int, domain: Int) {
@@ -57,19 +56,27 @@ class StateManagement {
         return longestStreak
     }
     
-    func setChallenge() {
-        lastChallengeDate = Date.now
+    func setChallenge(_ score: Int) {
+        dailyChallengeScore = score
         streak += 1
-    }
-    
-    func getCurrentStreak()-> Int{
         let currentDate = Calendar.current.date(byAdding: .day, value: -1, to: Date.now)!
         if (lastChallengeDate.compare(currentDate) == ComparisonResult.orderedAscending) {
             if (streak > longestStreak) {
                 longestStreak = streak
             }
-            streak = 0
+            streak = 1
         }
+        lastChallengeDate = Date.now
+        
+        defaults.set(dailyChallengeScore, forKey: "challengeScore")
+        let dateformatter = ISO8601DateFormatter()
+        defaults.set(dateformatter.string(from: lastChallengeDate), forKey: "lastChallengeDate")
+        defaults.set(streak, forKey: "streak")
+        defaults.set(longestStreak, forKey: "longestStreak")
+    }
+    
+    func getCurrentStreak()-> Int{
+        
         
         
         return streak
