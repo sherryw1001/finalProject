@@ -10,6 +10,7 @@ import SwiftUI
 struct DailyChallengeEndPage: View {
     @State var finalScore: Int
     
+    
     init(score: Int) {
         self.finalScore = score
         StateManagement.shared.setChallenge(score)
@@ -27,6 +28,13 @@ struct DailyChallengeEndPage: View {
                         .padding()
                     
                     Text(String(format: "Score: %d", finalScore))
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color(red: 102/255, green: 103/255, blue: 191/255))
+                        .multilineTextAlignment(.center)
+                        .padding()
+                    
+                    Text(String(format: "Your new streak: %d", StateManagement.shared.getCurrentStreak()))
                         .font(.title)
                         .fontWeight(.bold)
                         .foregroundColor(Color(red: 102/255, green: 103/255, blue: 191/255))

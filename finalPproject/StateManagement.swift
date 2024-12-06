@@ -58,7 +58,9 @@ class StateManagement {
     
     func setChallenge(_ score: Int) {
         dailyChallengeScore = score
-        streak += 1
+        if (Calendar.current.dateComponents([.day], from: lastChallengeDate).day != Calendar.current.dateComponents([.day], from: Date.now).day){
+            streak += 1
+        }
         let currentDate = Calendar.current.date(byAdding: .day, value: -1, to: Date.now)!
         if (lastChallengeDate.compare(currentDate) == ComparisonResult.orderedAscending) {
             if (streak > longestStreak) {
