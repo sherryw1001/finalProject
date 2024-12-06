@@ -23,6 +23,7 @@ struct DailyChallengeQuestion: View {
     @State private var signValue: String
     @State private var signValues: [String]
     @State private var answer: [String]
+    @State private var selected: Int
     
     init(number: Int = 0, score: Int = 0) {
         var strings: [String]
@@ -44,6 +45,7 @@ struct DailyChallengeQuestion: View {
 
         signValue = tempString
         signValues = tempStrings
+        selected = -1
     }
 
     
@@ -66,10 +68,11 @@ struct DailyChallengeQuestion: View {
                     
                     ForEach(0...2, id: \.self) { char in
                       Button(action: {
-                          answer = [" ", " ", " "]
-                          answer[char] = signValues[char]
-                          if (answer[char] == signValue){
-                              currentScore += 1
+                          if (selected == -1){
+                              if (signValues[char] == signValue){
+                                  currentScore += 1
+                              }
+                              selected = char
                           }
                       }) {
                           HStack {
@@ -77,13 +80,13 @@ struct DailyChallengeQuestion: View {
                                   .font(.title3)
                                   .fontWeight(.semibold)
                                   .frame(maxWidth: .infinity, alignment: .leading)
-                              if answer[char] != " " && answer[char] == signValue {
+                              if selected == char && signValues[char] == signValue {
                                 Text("✅ Good Job!")
                                     .font(.body)
                                     .fontWeight(.regular)
                                     .foregroundColor(Color(red: -0.024, green: 0.717, blue: 0.003))
                                 
-                              } else if (answer[char] != " " ){
+                              } else if (selected == char ){
                                 Text ("❌  Try again!")
                                     .font(.body)
                                     .fontWeight(.regular)
@@ -107,7 +110,7 @@ struct DailyChallengeQuestion: View {
                                 .multilineTextAlignment(.trailing)
                         }//end of navigationLink
                     } else {
-                      NavigationLink(destination: ASLLettersQuizEndPage(score: currentScore)) {
+                      NavigationLink(destination: DailyChallengeEndPage(score: currentScore)) {
                           Text("Complete Quiz →")
                               .foregroundColor(Color(red: 147/255, green: 129/255, blue: 1))
                               .multilineTextAlignment(.trailing)
