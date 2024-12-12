@@ -17,11 +17,13 @@ class StateManagement {
     static let words: [String] = ["Hello", "Please", "ThankYou", "Yes", "YoureWelcome", "Sorry", "No", "ILoveYou", "Goodbye"]
     var quiz: [Pair<String, String>]
     let defaults = UserDefaults.standard
+    var lastDiamondDate: Date
     
     static let shared = StateManagement()
     
     private init(){
-        lastChallengeDate = Date.now
+        lastChallengeDate = Calendar.current.date(byAdding: .day, value: -1, to: Date.now)!
+        lastDiamondDate = Calendar.current.date(byAdding: .day, value: -1, to: Date.now)!
         if let savedChallengeDate = defaults.string(forKey: "lastChallengeDate") {
             let dateformatter = ISO8601DateFormatter()
             lastChallengeDate = dateformatter.date(from: savedChallengeDate)!
@@ -29,6 +31,7 @@ class StateManagement {
         streak = defaults.integer(forKey: "streak")
         longestStreak = defaults.integer(forKey: "longestStreak")
         dailyChallengeScore = defaults.integer(forKey: "challengeScore")
+        diamonds = defaults.integer(forKey: "diamonds")
         quiz = []
         generateQuiz(2, domain: 2)
     }
@@ -58,6 +61,9 @@ class StateManagement {
     
     func setChallenge(_ score: Int) {
         dailyChallengeScore = score
+        if (Calendar.current.dateComponents([.minute], from: lastDiamondDate).minute != Calendar.current.dateComponents([.minute], from: Date.now).minute){
+            diamonds += score
+        }
         if (Calendar.current.dateComponents([.day], from: lastChallengeDate).day != Calendar.current.dateComponents([.day], from: Date.now).day){
             streak += 1
         }
@@ -69,8 +75,10 @@ class StateManagement {
             streak = 1
         }
         lastChallengeDate = Date.now
+        lastDiamondDate = Date.now
         
         defaults.set(dailyChallengeScore, forKey: "challengeScore")
+        defaults.set(diamonds, forKey: "diamonds")
         let dateformatter = ISO8601DateFormatter()
         defaults.set(dateformatter.string(from: lastChallengeDate), forKey: "lastChallengeDate")
         defaults.set(streak, forKey: "streak")
@@ -78,9 +86,9 @@ class StateManagement {
     }
     
     func getCurrentStreak()-> Int{
-        
-        
-        
         return streak
+    }
+    func getDiamondCount()-> Int{
+        return diamonds
     }
 }

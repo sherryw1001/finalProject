@@ -41,6 +41,13 @@ struct DailyChallengeEndPage: View {
                         .multilineTextAlignment(.center)
                         .padding()
                     
+                    Text(String(format: "Diamond count: %d", StateManagement.shared.getDiamondCount()))
+                        .font(.title)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color(red: 102/255, green: 103/255, blue: 191/255))
+                        .multilineTextAlignment(.center)
+                        .padding()
+                    
                     NavigationLink(destination: HomePage()) {
                         Text("Return to Home Page  ")
                             .font(.title3)

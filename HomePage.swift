@@ -32,13 +32,13 @@ struct HomePage: View {
                                     .resizable()
                                     .aspectRatio (contentMode:.fit)
                                     .cornerRadius(15)
-                                Text("84")
+                                Text(String(StateManagement.shared.getCurrentStreak()))
                                 HStack{
                                     Image("Gems")
                                         .resizable()
                                         .aspectRatio (contentMode:.fit)
                                         .cornerRadius(15)
-                                    Text("250")
+                                    Text(String (StateManagement.shared.getDiamondCount()))
                                         .foregroundColor(Color(red: 0.021, green: 0.673, blue: 0.912))
                                     
                                 }
@@ -47,7 +47,7 @@ struct HomePage: View {
                                         .resizable()
                                         .aspectRatio (contentMode:.fit)
                                         .cornerRadius(15)
-                                    Text("5")
+                                    Text(String(StateManagement.shared.getLongestStreak()))
                                         .foregroundColor(Color(red: 0.927, green: 0.104, blue: 0.151))
                                     
                                 }
