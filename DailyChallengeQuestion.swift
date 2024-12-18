@@ -20,17 +20,17 @@ struct DailyChallengeQuestion: View {
     @State private var questionNum: Int
     @State private var currentScore: Int
     @State private var sign: String
-    @State private var signValue: String
-    @State private var signValues: [String]
+    @State private var signValue: Dictionary<String, String>.Element
+    @State private var signValues: [Dictionary<String, String>.Element]
     @State private var answer: [String]
     @State private var selected: Int
     
     init(number: Int = 0, score: Int = 0) {
-        var strings: [String]
+        var strings: [Dictionary<String, String>.Element]
         questionNum = number
         currentScore = score
-        var tempString: String = ""
-        var tempStrings: [String]
+        var tempString: Dictionary<String, String>.Element
+        var tempStrings: [Dictionary<String, String>.Element]
         answer = [" ", " ", " "]
         tempString = StateManagement.shared.quiz[number].second // 65 = A 91 = Z
         if (StateManagement.shared.quiz[number].first == "letter"){
@@ -40,7 +40,7 @@ struct DailyChallengeQuestion: View {
             strings = StateManagement.words.shuffled()
         }
         strings = strings.filter{$0 != tempString}
-        sign = "\(tempString)Sign"
+        sign = "\(tempString.key)Sign"
         tempStrings = [tempString, strings[1], strings[2]].shuffled()
 
         signValue = tempString
@@ -69,14 +69,14 @@ struct DailyChallengeQuestion: View {
                     ForEach(0...2, id: \.self) { char in
                       Button(action: {
                           if (selected == -1){
-                              if (signValues[char] == signValue){
+                              if (signValues[char].key == signValue.key){
                                   currentScore += 1
                               }
                               selected = char
                           }
                       }) {
                           HStack {
-                              Text(String(signValues[char]))
+                              Text(String(signValues[char].value))
                                   .font(.title3)
                                   .fontWeight(.semibold)
                                   .frame(maxWidth: .infinity, alignment: .leading)

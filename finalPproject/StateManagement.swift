@@ -13,9 +13,10 @@ class StateManagement {
     var longestStreak: Int = 0
     var diamonds: Int = 0
     var lastChallengeDate: Date
-    static let letters: [String] = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "W", "X", "Y", "Z"]
-    static let words: [String] = ["Hello", "Please", "ThankYou", "Yes", "YoureWelcome", "Sorry", "No", "ILoveYou", "Goodbye"]
-    var quiz: [Pair<String, String>]
+    static let letters: Dictionary <String, String> = ["A": "A", "B": "B", "C": "C", "D": "D", "E": "E", "F": "F", "G": "G", "H": "H", "I": "I", "J": "J", "K": "K", "L": "L", "M": "M", "N": "N", "O": "O", "P": "P", "Q": "Q", "R": "R", "S": "S", "T": "T", "U": "U", "W": "W", "X": "X", "Y":
+                                    "Y", "Z": "Z"]
+    static let words: Dictionary <String, String> = ["Hello": "Hello", "Please": "Please", "ThankYou": "Thank You", "Yes": "Yes", "YoureWelcome": "You're Welcome", "Sorry": "Sorry", "No": "No", "ILoveYou": "I Love You", "Goodbye": "Goodbye"]
+    var quiz: [Pair<String, Dictionary<String, String>.Element>]
     let defaults = UserDefaults.standard
     var lastDiamondDate: Date
     
@@ -36,11 +37,11 @@ class StateManagement {
         generateQuiz(2, domain: 2)
     }
     
-    func getValue(_ type: Int) -> Pair<String, String> {
+    func getValue(_ type: Int) -> Pair<String, Dictionary<String, String>.Element> {
         if type == 0 {
-            return Pair(first:"letter", second:StateManagement.letters[Int.random(in:0..<StateManagement.letters.count)])
+            return Pair(first:"letter", second:StateManagement.letters.randomElement()!)
         }
-        return Pair(first:"word", second:StateManagement.words[Int.random(in:0..<StateManagement.words.count)])
+        return Pair(first:"word", second:StateManagement.words.randomElement()!)
     }
     
     func generateQuiz(_ size: Int, domain: Int) {
@@ -68,6 +69,7 @@ class StateManagement {
             streak += 1
         }
         let currentDate = Calendar.current.date(byAdding: .day, value: -1, to: Date.now)!
+        print(lastChallengeDate)
         if (lastChallengeDate.compare(currentDate) == ComparisonResult.orderedAscending) {
             if (streak > longestStreak) {
                 longestStreak = streak

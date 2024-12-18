@@ -32,7 +32,7 @@ struct HomePage: View {
                                     .resizable()
                                     .aspectRatio (contentMode:.fit)
                                     .cornerRadius(15)
-                                Text(String(StateManagement.shared.getCurrentStreak()))
+                                Text(String(StateManagement.shared.getLongestStreak()))
                                 HStack{
                                     Image("Gems")
                                         .resizable()
@@ -43,7 +43,7 @@ struct HomePage: View {
                                     
                                 }
                                 HStack{
-                                    Image("Heart")
+                                    Image("Fire")
                                         .resizable()
                                         .aspectRatio (contentMode:.fit)
                                         .cornerRadius(15)
