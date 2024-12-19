@@ -71,13 +71,14 @@ class StateManagement {
         let currentDate = Calendar.current.date(byAdding: .day, value: -1, to: Date.now)!
         print(lastChallengeDate)
         if (lastChallengeDate.compare(currentDate) == ComparisonResult.orderedAscending) {
-            if (streak > longestStreak) {
-                longestStreak = streak
-            }
+            
             streak = 1
         }
         lastChallengeDate = Date.now
         lastDiamondDate = Date.now
+        if (streak > longestStreak) {
+            longestStreak = streak
+        }
         
         defaults.set(dailyChallengeScore, forKey: "challengeScore")
         defaults.set(diamonds, forKey: "diamonds")

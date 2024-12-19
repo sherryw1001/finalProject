@@ -123,5 +123,5 @@ struct DailyChallengeQuestion: View {
 }
 
 #Preview {
-    ASLLettersQuizQuestionOne()
+    DailyChallengeQuestion()
 }

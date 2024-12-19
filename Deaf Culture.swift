@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct Deaf_Culture: View {
+    
+    @State private var longestStreak = StateManagement.shared.getLongestStreak()
+    @State private var currentStreak = StateManagement.shared.getCurrentStreak()
+    @State private var diamondCount = StateManagement.shared.getDiamondCount()
+    
     var body: some View {
         NavigationStack{
             ZStack{
@@ -29,22 +34,22 @@ struct Deaf_Culture: View {
                                     .resizable()
                                     .aspectRatio (contentMode:.fit)
                                     .cornerRadius(15)
-                                Text("84")
+                                Text(String(longestStreak))
                                 HStack{
                                     Image("Gems")
                                         .resizable()
                                         .aspectRatio (contentMode:.fit)
                                         .cornerRadius(15)
-                                    Text("250")
+                                    Text(String (diamondCount))
                                         .foregroundColor(Color(red: 0.021, green: 0.673, blue: 0.912))
                                     
                                 }
                                 HStack{
-                                    Image("Heart")
+                                    Image("Fire")
                                         .resizable()
                                         .aspectRatio (contentMode:.fit)
                                         .cornerRadius(15)
-                                    Text("5")
+                                    Text(String(currentStreak))
                                         .foregroundColor(Color(red: 0.927, green: 0.104, blue: 0.151))
                                     
                                 }
