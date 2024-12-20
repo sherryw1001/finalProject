@@ -24,6 +24,7 @@ struct DailyChallengeQuestion: View {
     @State private var signValues: [Dictionary<String, String>.Element]
     @State private var answer: [String]
     @State private var selected: Int
+    @State private var correctAnswerMessage: String? = nil//new code
     
     init(number: Int = 0, score: Int = 0) {
         var strings: [Dictionary<String, String>.Element]
@@ -72,6 +73,12 @@ struct DailyChallengeQuestion: View {
                               if (signValues[char].key == signValue.key){
                                   currentScore += 1
                               }
+                              //new starting here
+                              else {
+                                  correctAnswerMessage = "Correct answer: \(signValue.value)"
+                              }
+                              //fix the correct answer
+                              //new ends here
                               selected = char
                           }
                       }) {
@@ -98,10 +105,23 @@ struct DailyChallengeQuestion: View {
                       .buttonStyle(.borderedProminent)
                       .tint(Color(red: 230/255, green: 228/255, blue: 242/255))
                       .foregroundColor(Color(red: 102/255, green: 103/255, blue: 191/255))
-                      .padding(.horizontal, 25.0)
+                      .padding(.horizontal, 15.0)
                       .controlSize(.large)
                       .frame(maxWidth: .infinity)
                     }
+                    
+                    //new code to display correct answer message if available
+                    if let message = correctAnswerMessage {
+                        Text(message)
+                            .font(.headline)
+                            .fontWeight(.semibold)
+                            .multilineTextAlignment(.center)
+                            .foregroundColor(Color(red: 102/255, green: 103/255, blue: 191/255))
+                            .padding(3)
+                            .padding(.horizontal, 25.0)
+                    }
+                    //change this text style later
+                    //new code ends here
 
                     if (StateManagement.shared.quiz.count > questionNum + 1) {
                         NavigationLink(destination: DailyChallengeQuestion(number: questionNum + 1, score: currentScore)) {
