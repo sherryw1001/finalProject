@@ -87,7 +87,7 @@ struct DailyChallengeQuestion: View {
                                     .foregroundColor(Color(red: -0.024, green: 0.717, blue: 0.003))
                                 
                               } else if (selected == char ){
-                                Text ("❌  Try again!")
+                                Text ("❌  Incorrect")
                                     .font(.body)
                                     .fontWeight(.regular)
                                     .foregroundColor(Color(red: 0.83, green: 0.005, blue: 0.005))
