@@ -32,7 +32,7 @@ struct Basic_Words: View {
                                     .resizable()
                                     .aspectRatio (contentMode:.fit)
                                     .cornerRadius(15)
-                                Text(String(longestStreak))
+                                Text(String(longestStreak)).foregroundColor(Color(red: 0.00, green: 0.00, blue: 0.00))
                                 HStack{
                                     Image("Gems")
                                         .resizable()
