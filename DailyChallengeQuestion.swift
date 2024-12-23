@@ -56,6 +56,7 @@ struct DailyChallengeQuestion: View {
             ZStack {
                 Color(red: 248/255, green: 247/255, blue: 1).ignoresSafeArea()
                 VStack {
+                    
                     Text("What does this sign mean?")
                         .font(.title)
                         .fontWeight(.semibold)
@@ -138,7 +139,19 @@ struct DailyChallengeQuestion: View {
                     }
                 }//end of VStack
             }//end of ZStack
-        }.tint(Color(red: 147/255, green: 129/255, blue: 1))//end of Navigation Stack
+        }.tint(Color(red: 147/255, green: 129/255, blue: 1)).navigationBarBackButtonHidden(true)
+            .navigationBarTitle("").toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    NavigationLink (
+                        destination: HomePage()
+                    ) {
+                        HStack {
+                            Image(systemName: "chevron.backward")
+                            Text("Return")
+                        }
+                    }
+                }
+            }//end of Navigation Stack
     }
 }
 

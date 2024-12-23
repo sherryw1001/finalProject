@@ -30,6 +30,7 @@ class StateManagement {
             lastChallengeDate = dateformatter.date(from: savedChallengeDate)!
         }
         streak = defaults.integer(forKey: "streak")
+        
         longestStreak = defaults.integer(forKey: "longestStreak")
         dailyChallengeScore = defaults.integer(forKey: "challengeScore")
         diamonds = defaults.integer(forKey: "diamonds")

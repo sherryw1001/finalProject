@@ -147,7 +147,7 @@ struct HomePage: View {
                 }
             }
         }
-        .tint(Color(red: 147/255, green: 129/255, blue: 1))
+        .tint(Color(red: 147/255, green: 129/255, blue: 1)).navigationBarBackButtonHidden(true)
     }
 }
 
