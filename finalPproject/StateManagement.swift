@@ -13,8 +13,7 @@ class StateManagement {
     var longestStreak: Int = 0
     var diamonds: Int = 0
     var lastChallengeDate: Date
-    static let letters: Dictionary <String, String> = ["A": "A", "B": "B", "C": "C", "D": "D", "E": "E", "F": "F", "G": "G", "H": "H", "I": "I", "J": "J", "K": "K", "L": "L", "M": "M", "N": "N", "O": "O", "P": "P", "Q": "Q", "R": "R", "S": "S", "T": "T", "U": "U", "W": "W", "X": "X", "Y":
-                                    "Y", "Z": "Z"]
+    static let letters: Dictionary <String, String> = ["A": "A", "B": "B", "C": "C", "D": "D", "E": "E", "F": "F", "G": "G", "H": "H", "I": "I", "J": "J", "K": "K", "L": "L", "M": "M", "N": "N", "O": "O", "P": "P", "Q": "Q", "R": "R", "S": "S", "T": "T", "U": "U", "W": "W", "X": "X", "Y": "Y", "Z": "Z"]
     static let words: Dictionary <String, String> = ["Hello": "Hello", "Please": "Please", "ThankYou": "Thank You", "Yes": "Yes", "YoureWelcome": "You're Welcome", "Sorry": "Sorry", "No": "No", "ILoveYou": "I Love You", "Goodbye": "Goodbye"]
     var quiz: [Pair<String, Dictionary<String, String>.Element>]
     let defaults = UserDefaults.standard
@@ -49,9 +48,12 @@ class StateManagement {
         quiz = []
         for _ in 0...size {
             if (domain == 2){
-                quiz.append(getValue(Int.random(in: 0...2)))
+                let randomValue = Int.random(in: 0...1)
+                print("Random domain value:", randomValue)  // Debugging line
+                quiz.append(getValue(randomValue))
             }
             else {
+                print("Using provided domain value:", domain)  // Debugging line
                 quiz.append(getValue(domain))
             }
         }

@@ -13,9 +13,6 @@ struct HomePage: View {
     @State private var currentStreak = StateManagement.shared.getCurrentStreak()
     @State private var diamondCount = StateManagement.shared.getDiamondCount()
     
-    init() {
-        StateManagement.shared.generateQuiz(8, domain: 2)
-    }
     var body: some View {
         NavigationStack{
             ZStack{
@@ -123,7 +120,7 @@ struct HomePage: View {
                         }
                     }
                         
-                    NavigationLink(destination:DailyChallengeQuestion()) {
+                    NavigationLink(destination:DailyChallengeStartPage()) {
                             HStack{
                                 Text("Daily Challenge")
                                     .font(.title)

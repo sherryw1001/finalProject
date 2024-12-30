@@ -20,6 +20,7 @@
 		C4548C6A2C5AD91D00EDEEC3 /* CulturalBehaviors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4548C692C5AD91D00EDEEC3 /* CulturalBehaviors.swift */; };
 		C4548C6C2C5AD95200EDEEC3 /* HistoryAndValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4548C6B2C5AD95200EDEEC3 /* HistoryAndValues.swift */; };
 		E51BBDE32C5AB8070026278B /* BasicASLQuizStartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51BBDE22C5AB8070026278B /* BasicASLQuizStartPage.swift */; };
+		E550CC4C2D2352D5006FF6C7 /* DailyChallengeStartPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E550CC4B2D2352D5006FF6C7 /* DailyChallengeStartPage.swift */; };
 		E55625882CFAB91D00B97380 /* DailyChallengeEndPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55625872CFAB91400B97380 /* DailyChallengeEndPage.swift */; };
 		E5880BDD2CEECA8E00DAFF15 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E5880BDC2CEECA8500DAFF15 /* .gitignore */; };
 		E59530A82CD0532900179742 /* StateManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59530A72CD0532900179742 /* StateManagement.swift */; };
@@ -43,6 +44,7 @@
 		C4548C692C5AD91D00EDEEC3 /* CulturalBehaviors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CulturalBehaviors.swift; sourceTree = "<group>"; };
 		C4548C6B2C5AD95200EDEEC3 /* HistoryAndValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryAndValues.swift; sourceTree = "<group>"; };
 		E51BBDE22C5AB8070026278B /* BasicASLQuizStartPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicASLQuizStartPage.swift; sourceTree = "<group>"; };
+		E550CC4B2D2352D5006FF6C7 /* DailyChallengeStartPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyChallengeStartPage.swift; sourceTree = "<group>"; };
 		E55625872CFAB91400B97380 /* DailyChallengeEndPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyChallengeEndPage.swift; sourceTree = "<group>"; };
 		E5880BDC2CEECA8500DAFF15 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		E59530A72CD0532900179742 /* StateManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManagement.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				E55625872CFAB91400B97380 /* DailyChallengeEndPage.swift */,
 				8B645A7E2C5A89CC00B219FF /* Basic Words.swift */,
 				E51BBDE22C5AB8070026278B /* BasicASLQuizStartPage.swift */,
+				E550CC4B2D2352D5006FF6C7 /* DailyChallengeStartPage.swift */,
 				8B645A802C5A89DB00B219FF /* Deaf Culture.swift */,
 				C4548C6B2C5AD95200EDEEC3 /* HistoryAndValues.swift */,
 				C4548C692C5AD91D00EDEEC3 /* CulturalBehaviors.swift */,
@@ -193,6 +196,7 @@
 				C4548C662C5AD79A00EDEEC3 /* alphabetQuiz.swift in Sources */,
 				039CD4FA2C5410550004C39F /* finalPprojectApp.swift in Sources */,
 				8B645A7D2C5A89C100B219FF /* Letters.swift in Sources */,
+				E550CC4C2D2352D5006FF6C7 /* DailyChallengeStartPage.swift in Sources */,
 				C4548C682C5AD8E900EDEEC3 /* whatIsDeafCulture.swift in Sources */,
 				E55625882CFAB91D00B97380 /* DailyChallengeEndPage.swift in Sources */,
 				8B645A7F2C5A89CC00B219FF /* Basic Words.swift in Sources */,
@@ -339,8 +343,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,8 +373,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
