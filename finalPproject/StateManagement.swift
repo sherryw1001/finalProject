@@ -35,6 +35,13 @@ class StateManagement {
         diamonds = defaults.integer(forKey: "diamonds")
         quiz = []
         generateQuiz(2, domain: 2)
+        let currentDate = Calendar.current.date(byAdding: .day, value: -1, to: Date.now)!
+        print(lastChallengeDate)
+        if (lastChallengeDate.compare(currentDate) == ComparisonResult.orderedAscending) {
+            
+            streak = 0
+            defaults.set(streak, forKey: "streak")
+        }
     }
     
     func getValue(_ type: Int) -> Pair<String, Dictionary<String, String>.Element> {
@@ -49,11 +56,9 @@ class StateManagement {
         for _ in 0...size {
             if (domain == 2){
                 let randomValue = Int.random(in: 0...1)
-                print("Random domain value:", randomValue)  // Debugging line
                 quiz.append(getValue(randomValue))
             }
             else {
-                print("Using provided domain value:", domain)  // Debugging line
                 quiz.append(getValue(domain))
             }
         }
